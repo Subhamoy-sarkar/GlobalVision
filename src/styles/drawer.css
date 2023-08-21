@@ -1,0 +1,42 @@
+.drawer-main{
+    height: 100vh;
+    width: 15vw;
+    background-color: #242247;
+}
+#name {
+    text-transform: capitalize;
+    color: white;
+    font-size: 30px;
+    padding: 15px 10px;
+    font-weight: bold;
+}
+.drawer-content {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+.drawer-content .btn1{
+    margin: 30px 2px;
+}
+.exit{
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.exit button{
+    width: 40px;
+    height: 40px;
+}
+
+
+/* for icons imported from fontawesome , add this className : "icon" */
+.icon{
+    color: rgb(255, 255, 255);
+}
+.icon:hover {
+    color: #8871E6;
+}
