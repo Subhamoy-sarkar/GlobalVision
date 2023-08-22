@@ -18,8 +18,17 @@
     display: flex;
     align-items: center;
 }
-.drawer-content .btn1{
-    margin: 30px 2px;
+.btn{
+    width: 15vw;
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+.selectedBtn{
+    background-color: #2E2C54;
+    border-radius: 147px 0 0 130px;
+    font-size: 24px;
 }
 .exit{
     display: flex;
