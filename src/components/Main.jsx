@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Webcam from "react-webcam";
 import "../styles/main.css";
 import sound from "../assets/sound.png";
 import send from "../assets/send.png";
@@ -30,9 +31,11 @@ const Chats=()=>{
   );
 }
 const VideoSubtitle=()=>{
+  const webCamRef=React.useRef(null);
   return (
     <div className="left">
       <div className="videobig">
+        <Webcam  className="userCam" audio={true} ref={webCamRef} mirrored={true}/>
         <div className="videosmall"></div>
       </div>
       <div className="subtitle">
