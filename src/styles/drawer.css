@@ -5,9 +5,9 @@
 }
 #name {
     text-transform: capitalize;
-    color: white;
-    font-size: 30px;
-    padding: 15px 10px;
+    color: #8547d3;
+    font-size: 35px;
+    padding: 11px 0px 0px 4px;
     font-weight: bold;
 }
 .drawer-content {
@@ -24,11 +24,18 @@
     height: 20vh;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
 .selectedBtn{
     background-color: #2E2C54;
     border-radius: 147px 0 0 130px;
     font-size: 24px;
+}
+.selectedBtn .icon{
+    color: #8547d3;
+}
+.selectedBtn .icon:hover{
+    color: white;
 }
 .exit{
     display: flex;
@@ -47,5 +54,5 @@
     color: rgb(255, 255, 255);
 }
 .icon:hover {
-    color: #8871E6;
+    color: #8547d3;
 }
