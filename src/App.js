@@ -11,8 +11,8 @@ function App() {
     <Router >
         <Drawer></Drawer>
         <Routes>
+          {/* <Route path="/" element={<Login/>}/> */}
           <Route path="/" element={<Main/>}/>
-          <Route path="/Login" element={<Login/>}/>
           <Route path="/Guide" element={<Guide/>}/>
         </Routes>
     </Router>
