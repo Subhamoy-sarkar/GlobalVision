@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { HashLink } from 'react-router-hash-link';
 import '../styles/drawer.css';
 function Drawercontent(props){
-  const[target,setTarget]=useState('loginBtn');
+  const[target,setTarget]=useState(sessionStorage.getItem('target') || 'loginBtn');
+
   const setBtnBg=(id)=>{
     setTarget(id);
   }
-  
+  useEffect(()=>{
+    sessionStorage.setItem('target',target);
+  },[target]);
   return(
       <div className="drawer-content">
         <HashLink to={'/#Login'} className={target==='loginBtn'? 'selectedBtn btn':'unselected btn'} id='loginBtn' onClick={()=>setBtnBg('loginBtn')}><i class="fa-solid fa-right-to-bracket fa-2xl icon"></i></HashLink>

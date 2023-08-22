@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Webcam from "react-webcam";
+import Webcam from "react-webcam";   //npm install react-webcam
 import "../styles/main.css";
 import sound from "../assets/sound.png";
 import send from "../assets/send.png";
