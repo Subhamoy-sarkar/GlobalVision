@@ -39,12 +39,12 @@
     color: white;
 }
 
-.selectedBtn .sideAnim .navCircle{
+/* .selectedBtn .sideAnim .navCircle{
     width: 13px;
     height: 13px;
     background-color: purple;
     border-radius: 30px;
-}
+} */
 
 .selectedBtn .sideAnim {        
     width: 15%;

@@ -1,0 +1,14 @@
+.loginbg{
+    width: 100vw;
+    height: 100vh;
+    background-color: #2E2C54;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginbtn{
+    font-size: 30px;
+    text-align: center;
+    width: 30vw;
+    height: 20vh;
+}
