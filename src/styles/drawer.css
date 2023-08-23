@@ -27,16 +27,35 @@
     text-decoration: none;
 }
 .selectedBtn{
-    background-color: #2E2C54;
-    border-radius: 147px 0 0 130px;
     font-size: 24px;
 }
 .selectedBtn .icon{
     color: #8547d3;
+    width: 85%;
+    display: flex;
+    justify-content: center;
 }
 .selectedBtn .icon:hover{
     color: white;
 }
+
+.selectedBtn .sideAnim .navCircle{
+    width: 13px;
+    height: 13px;
+    background-color: purple;
+    border-radius: 30px;
+}
+
+.selectedBtn .sideAnim {    width: 15%;
+    height: 100%;
+    background-color: #2E2C54;
+    border-radius: 500px 0px 0px 500px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
 .exit{
     display: flex;
     height: 20%;

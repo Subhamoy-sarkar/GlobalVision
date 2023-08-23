@@ -12,9 +12,9 @@ function Drawercontent(props){
   },[target]);
   return(
       <div className="drawer-content">
-        <HashLink to={'/#Login'} className={target==='loginBtn'? 'selectedBtn btn':'unselected btn'} id='loginBtn' onClick={()=>setBtnBg('loginBtn')}><i class="fa-solid fa-right-to-bracket fa-2xl icon"></i></HashLink>
-        <HashLink to={'/Main'}  className={target==='videoBtn'? 'selectedBtn btn':'unselected btn'} id='videoBtn' onClick={()=>setBtnBg('videoBtn')}><i class="fa-solid fa-video fa-2xl icon" ></i></HashLink>
-        <HashLink to={'/Guide'} className={target==='guideBtn'? 'selectedBtn btn':'unselected btn'} id='guideBtn'  onClick={()=>setBtnBg('guideBtn')}><i class="fa-solid fa-book fa-2xl icon"></i></HashLink>
+        <HashLink to={'/#Login'} className={target==='loginBtn'? 'selectedBtn btn':'unselected btn'} id='loginBtn' onClick={()=>setBtnBg('loginBtn')}><i class="fa-solid fa-right-to-bracket fa-2xl icon"></i> <div className="sideAnim"><div className="navCircle"></div></div></HashLink>
+        <HashLink to={'/Main'}  className={target==='videoBtn'? 'selectedBtn btn':'unselected btn'} id='videoBtn' onClick={()=>setBtnBg('videoBtn')}><i class="fa-solid fa-video fa-2xl icon" ></i><div className="sideAnim"><div className="navCircle"></div></div></HashLink>
+        <HashLink to={'/Guide'} className={target==='guideBtn'? 'selectedBtn btn':'unselected btn'} id='guideBtn'  onClick={()=>setBtnBg('guideBtn')}><i class="fa-solid fa-book fa-2xl icon"></i><div className="sideAnim"><div className="navCircle"></div></div></HashLink>
         {/* <i class="fa fa-solid fa-house" style={{color: 'white',}}></i> */}
       </div>);
 }
