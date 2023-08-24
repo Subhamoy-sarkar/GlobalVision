@@ -3,6 +3,7 @@ import Webcam from "react-webcam";   //npm install react-webcam
 import "../styles/main.css";
 import sound from "../assets/sound.png";
 import send from "../assets/send.png";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const CurrentChat=()=>{
   return (
@@ -62,7 +63,7 @@ const Heading=({name,time})=>{
   return(
     <div className="heading">
       <div className="title">
-        <span>{name}</span>
+        <span>Welcome {name}</span>
       </div>
       <div className="time">
         <div className="circle"></div>
@@ -78,12 +79,12 @@ const Heading=({name,time})=>{
 }
 
 
-const Main = () => {
-  const [projectName,setProjectName]=useState('myprojectName');
+const Main = ({userName}) => {
+  // const [projectName,setProjectName]=useState('myprojectName');
   const [duration,setDuration]=useState(0);
   return (
     <div id="bg">
-      <Heading name={projectName} time={duration}/>
+      <Heading name={userName} time={duration}/>
       <Body/>
     </div>
   );

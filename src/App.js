@@ -7,15 +7,18 @@ import { useAuth0 } from "@auth0/auth0-react";
 import LoginButton from "./components/LoginButton";
 
 function App() {
-  const { isAuthenticated } = useAuth0();
+  const {user,isAuthenticated,isLoading}=useAuth0();
   if(!isAuthenticated){
     return <LoginButton/>;
+  }
+  else if(isLoading){
+    return <div>Loading..</div>;
   }
   return (
     <Router >
         <Drawer></Drawer>
         <Routes>
-          <Route path="/" element={<Main/>}/>
+          <Route path="/" element={<Main userName={user.name}/>}/>
           <Route path="/Guide" element={<Guide/>}/>
         </Routes> 
     </Router>

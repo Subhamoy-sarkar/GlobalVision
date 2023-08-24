@@ -22,9 +22,8 @@ function Drawercontent(props){
   const { logout } = useAuth0();
 
   return (
-    <button onClick={() => logout({ logoutParams: { returnTo:"https://videocall-kappa.vercel.app" } })}>
-      Log Out
-    </button>
+      <i class="fa-solid fa-circle-xmark fa-2xl icon"  onClick={() => logout({ logoutParams: { returnTo:"https://videocall-kappa.vercel.app" } })}></i>
+
   );
 };
 function Exit(props){
